@@ -1,5 +1,24 @@
 {
-    "user":[
-        {}
-    ]
+  "user": [
+    {
+      "user": {
+        "name": "akif patel",
+        "age": "23",
+        "location": "belgaum, karnataka,India",
+        "interest": "adsf",
+        "password": "dafg"
+      },
+      "id": 1
+    },
+    {
+      "user": {
+        "name": "akif patel",
+        "age": "678",
+        "location": "dfg",
+        "interest": "adsf",
+        "password": "hjkhmnhm"
+      },
+      "id": 2
+    }
+  ]
 }

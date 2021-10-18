@@ -2,14 +2,22 @@ import { SignupError,SignupSuccess,SignupLoading } from "./actionType";
 
 
 const initialState={
-
+    isloading:false,
+    iserror:false,
+    data:[]
 }
 
-export const reduce=(state=initialState,{type,payload})=>{
+export const reducer=(state=initialState,{type,payload})=>{
  switch(type){
-     case SignupError:return{}
-     case SignupSuccess:return{}
-     case SignupLoading:return{}
-    default : return state
+     case SignupError:return{
+         ...state,isloading:false,iserror:true
+     }
+     case SignupSuccess:return{
+         ...state,isLoading:false,data:payload
+     }
+     case SignupLoading:return{
+         ...state,isloading:true
+     }
+    default : return {...state}
  }
 }
