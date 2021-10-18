@@ -19,6 +19,16 @@
         "password": "hjkhmnhm"
       },
       "id": 2
+    },
+    {
+      "user": {
+        "name": "tesing",
+        "age": "11",
+        "location": "mysore",
+        "interest": "dance",
+        "password": "1234"
+      },
+      "id": 3
     }
   ]
 }
