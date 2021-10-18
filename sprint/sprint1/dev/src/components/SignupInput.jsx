@@ -11,6 +11,7 @@ function SignupInput() {
         setFormData({...formdata,[name]:value})
         
     }
+   
     const handleClick=async()=>{
        const res= await axios.post("http://localhost:3002/user",{user:formdata})
        dispatch(signupSuccess(res.data.user))
