@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import {useDispatch,useSelector, useStore} from "react-redux"
 import axios from "axios"
 import {signupSuccess} from "../redux/signup/action"
+import "../App.css";
+
 function SignupInput() {
     const {isLoading,iserror,data}=useSelector((store)=>store)
     const dispatch=useDispatch()
@@ -20,12 +22,12 @@ function SignupInput() {
     return (
         <div>
             <div>
-                <input onChange={(e)=>{handleChange(e)}} name="name" type="text" placeholder="enter your name" /><br />
-                <input onChange={(e)=>{handleChange(e)}} name="age" type="number" placeholder="enter your age" /><br />
-                <input onChange={(e)=>{handleChange(e)}} name="location" type="text" placeholder="enter your location" /><br />
-                <input onChange={(e)=>{handleChange(e)}} name="interest" type="text" placeholder="enter your Interest" /><br />
-                <input onChange={(e)=>{handleChange(e)}} name="password" onChange={(e)=>{handleChange(e)}} type="password" placeholder="enter your password" /><br />
-                <button onClick={handleClick}>Submit</button>
+                <input className="inp" onChange={(e)=>{handleChange(e)}} name="name" type="text" placeholder="Enter your name" /><br />
+                <input className="inp" onChange={(e)=>{handleChange(e)}} name="age" type="number" placeholder="Enter your age" /><br />
+                <input className="inp" onChange={(e)=>{handleChange(e)}} name="location" type="text" placeholder="Enter your location" /><br />
+                <input className="inp" onChange={(e)=>{handleChange(e)}} name="interest" type="text" placeholder="Enter your Interest" /><br />
+                <input className="inp" onChange={(e)=>{handleChange(e)}} name="password" onChange={(e)=>{handleChange(e)}} type="Password" placeholder="enter your password" /><br />
+                <button className="btn2" onClick={handleClick}>Submit</button>
             </div>
         </div>
     )

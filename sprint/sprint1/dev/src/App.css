@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+.btn1{
+  margin: 10px;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 70px;
+  background-color: red;
+}
+.btn2{
+  margin: 10px;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 70px;
+  background-color: green;
+}
+.inp{
+  margin: 5px;
+  height: 20px;
+  width: 200px;
+}
