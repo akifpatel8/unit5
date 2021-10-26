@@ -29,6 +29,16 @@
         "password": "1234"
       },
       "id": 3
+    },
+    {
+      "user": {
+        "name": "akif patel",
+        "age": "21",
+        "location": "belgaum, karnataka,India",
+        "interest": "singing",
+        "password": "1234"
+      },
+      "id": 4
     }
   ]
 }
