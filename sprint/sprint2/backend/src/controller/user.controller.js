@@ -1,5 +1,5 @@
 const User=require("../model/user.model")
-const jwt =require('josnwebtoken')
+const jwt =require('jsonwebtoken')
 require("dotenv").config()
 
 const newToken=(user)=>{
