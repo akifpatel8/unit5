@@ -23,7 +23,7 @@ const register=async(req,res)=>{
 
 const login=async(req,res)=>{
     try{
-        let user = await User.findOne({email:res.body.email}).lean().exec()
+        let user = await User.findOne({email:res.body.email}).exec()
         if(!user){
             return res.status(400).json({status:"error",message:"user does not exists"})
         }
@@ -35,7 +35,7 @@ const login=async(req,res)=>{
         return res.status(200).json({user:user,token:token})
     }
     catch(err){
-         return res.staus(500).json(err)
+         return res.status(500).json(err)
     }
     
 }
